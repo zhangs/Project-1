@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Project</title>
-	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">	
-	<link rel="bootstrap" type="text/css" href="bootstrap.css">
+	
+    <link rel="styling" type="text/css" href="others.css">
+
+	
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="http://twitter.github.com/bootstrap/1.4.8/bootstrap-modal.js"></script>
+	<script>$(document).ready(function() {
+				$("#modal-from-dom").bind('show', function() { 
+					var name = $("#name").val();
+					$("#name_header).text("Hello, " + name);
+				});
+			});
+	</script>
 </head>
 
-<body>
-	<div class="container">
-    <div class="row">
-    <div class="span9">
-    <h3>Logo</h3>
-    </div>
-    <div class="span7">
-		<ul class="pills" style="float:right;">
-		<li class="active"><a href="#">Home</a></li>
-		<li><a href="#">Example</a></li>
-		<li><a href="#">Pricing</a></li>
-    </ul>	
-    </div>
-	</div>
-	<div class="row">
-	<div class="span6">
-		Blue Product
-	</div>
-	<div class="span6 offset 4">
-		Level 2
-	</div>
-	</div>
+<body>	
+	<div class="container">		
+		<div class="row">
+			<div class="span5">
+				<h2>Pokemon Notepad</h2>
+			</div>
+			<div class="span11">
+				<ul class="pills" style="float:right;">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Pokedex</a></li>
+					<li><a href="#">Franchise</a></li>
+					<li><a href="#">Competitive Battling in Generation 5</a></li>		
+				</ul>	
+			</div>
+		</div>
+	
+		<ul class="media-grid">
+			<li>
+				<a href="#">
+					<img class="thumbnail" src="pokedex.png" alt="Check the Pokedex">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="thumbnail" src="franchisecomplete.jpg" alt="Franchise">
+				</a>
+			</li>
+		</ul>
+	
+	
+		<div class="row">
+			<div class="span7">
+				<h3>
+					Pokedex
+				</h3>
+			</div>
+			<div class="span5 offset 4">
+				<h3>
+					Pokemon Franchise
+				</h3>
+			</div>
+		</div>
+		
+		<ul class="media-grid">
+			<li>
+				<a href="#">
+					<img class="thumbnail" src="versus.jpg" alt="Competitive Batting">
+				</a>
+			</li>
+		</ul>
+		
 	</div>
 </body>	
 </html>
