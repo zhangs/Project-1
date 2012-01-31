@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Project</title>
 	
-    <link rel="styling" type="text/css" href="others.css">
+    <link rel="stylesheet" type="text/css" href="others.css">
 
 	
 	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
@@ -19,81 +19,84 @@
 	</script>
 </head>
 
-<body>	
-	<div class="container">		
-		<div class="row">
-			<div class="span5">
-				<h2>Pokemon Notepad</h2>
+<body>
+	<div class="container-fluid">
+		<div class="sidebar">
+			<h2>Pokemon Notepad</h2>
+			
+			<div class="clearfix">
+				Log-In
+				<br>
+				<div class="input">
+					<input type="text" />
+				</div>
+				<br>
+				<a href="#">Sign Up</a> 
 			</div>
-			<div class="span11">
-				<ul class="pills" style="float:right;">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Pokedex</a></li>
-					<li><a href="#">Franchise</a></li>
-					<li><a href="#">Competitive Battling in Generation 5</a></li>		
-				</ul>	
-			</div>
-		</div>
-	
-
-		<div class="clearfix">
-			Log-In
+			
 			<br>
-			<div class="input">
-				<input type="text" />
-			</div>
 			<br>
-			<a href="#">Sign Up</a> 
-		</div>
-
-	
-		<br>
-		<br>
-	
-		<ul class="media-grid">
-			<div class="row">
-				<div class="span7">
-					<li>
-						<a href="#">
-							<img class="thumbnail" src="pokedex.png" alt="Check the Pokedex">
-							<font size="5">Pokedex</font>
-						</a>
-					</li>
-				</div>
-				<div class="span3">
-					<blockquote>
-						<br>
-						<br>
-							<p>Welcome to this site for Pokemon fans!
-							This site has all of the applications one needs to understand what 
-							Pokemon is, from the complicated ideas of competitive battling to just 
-							the Pokedex for info on Pokemon. Need to know something? Come on in and 
-							explore this site!</p>
-					</blockquote>
-				</div>
-				<div class="span5">
-					<li>
-						<a href="#">
-							<img class="thumbnail" src="versus.jpg" alt="Competitive Batting">
-							<font size="5">Competitive Battling</font>
-						</a>
-					</li>
-				</div>
-			</div>
-		</ul>
 		
-		<ul class="media-grid">
+			<ul class="media-grid">
+				<li>
+					<a href="#">
+						<img class="thumbnail" src="pokedex.png" alt="Check the Pokedex">
+						<font size="5">Pokedex</font>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="thumbnail" src="versus.jpg" alt="Competitive Batting">
+						<font size="5">Competitive Battling</font>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="thumbnail" src="franchisecomplete.jpg" alt="Franchise">
+						<font size="5">Franchise</font>							
+					</a>
+				</li>					
+			</ul>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="span16">
+					<ul class="pills" style="float:right;">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Pokedex</a></li>
+						<li><a href="#">Franchise</a></li>
+						<li><a href="#">Competitive Battling in Generation 5</a></li>		
+					</ul>	
+				</div>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+		
 			<div class="row">
 				<div class="span12 offset4">
-					<li>
-						<a href="#">
-							<img class="thumbnail" src="franchisecomplete.jpg" alt="Franchise">
-							<font size="5">Franchise</font>							
-						</a>
-					</li>
+					_____________________________________________________________________________________________________________________
+				</div>
+			
+				<div class="span11 offset5">					
+				<br>
+					<p>Welcome to this site for Pokemon fans!
+					This site has all of the applications one needs to understand what 
+					Pokemon is, from the complicated ideas of competitive battling to just 
+					the Pokedex for info on Pokemon. Need to know something? Come on in and 
+					explore this site!</p>
 				</div>
 			</div>
-		</ul>
+		</div>
+		
+	
+	
+	
+	
 	</div>
 </body>	
 </html>
