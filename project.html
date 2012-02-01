@@ -5,7 +5,6 @@
 	<title>Project</title>
 	
     <link rel="stylesheet" type="text/css" href="others.css">
-
 	
 	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -19,83 +18,119 @@
 	</script>
 </head>
 
-<body>
-	<div class="container-fluid">
-		<div class="sidebar">
-			<h2>Pokemon Notepad</h2>
-			
-			<div class="clearfix">
-				Log-In
-				<br>
-				<div class="input">
-					<input type="text" />
-				</div>
-				<br>
-				<a href="#">Sign Up</a> 
-			</div>
-			
-			<br>
-			<br>
-		
-			<ul class="media-grid">
-				<li>
-					<a href="#">
-						<img class="thumbnail" src="pokedex.png" alt="Check the Pokedex">
-						<font size="5">Pokedex</font>
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						<img class="thumbnail" src="versus.jpg" alt="Competitive Batting">
-						<font size="5">Competitive Battling</font>
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						<img class="thumbnail" src="franchisecomplete.jpg" alt="Franchise">
-						<font size="5">Franchise</font>							
-					</a>
-				</li>					
-			</ul>
+<body class="bodybackground">
+	<div id="modal-from-dom" class="modal hide fade">
+		<div class="modal-header">
+			<a href="#" class="close">&times;</a>
+			    <h3 id="name_header"></h3>
 		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="span16">
-					<ul class="pills" style="float:right;">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Pokedex</a></li>
-						<li><a href="#">Franchise</a></li>
-						<li><a href="#">Competitive Battling in Generation 5</a></li>		
-					</ul>	
-				</div>
+		<div class="modal-body">
+			<p>Body</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn primary">Primary</a>
+			<a href="#" class="btn">Secondary</a>
+		</div>
+	</div>	
+
+
+	<div class="container">
+		<div class="row bar_background">
+			<div class="span5">
+				<img src="logo.jpg"></img>
 			</div>
-			
-			<br>
-			<br>
-			<br>
-		
-			<div class="row">
-				<div class="span12 offset4">
-					_____________________________________________________________________________________________________________________
-				</div>
-			
-				<div class="span11 offset5">					
-				<br>
-					<p>Welcome to this site for Pokemon fans!
-					This site has all of the applications one needs to understand what 
-					Pokemon is, from the complicated ideas of competitive battling to just 
-					the Pokedex for info on Pokemon. Need to know something? Come on in and 
-					explore this site!</p>
-				</div>
+			<div class="span11">
+				<ul class="pills" style="float:right;">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Pokedex</a></li>
+					<li><a href="#">Franchise</a></li>
+					<li><a href="#">Competitive Battling in Generation 5</a></li>		
+				</ul>	
 			</div>
 		</div>
 		
+		<br>
+		
+		<div class="row">
+			<table align="center" class="main">
+				<tr>
+					<td>
+						<div class="intro_font">
+						<br>
+							Welcome to this site for Pokemon fans!
+						</div>
+						
+						<br>
+						
+						<div class="ex_font">
+							This site has all of the applications one needs to understand what 
+							Pokemon is,<br/>
+							from the complicated ideas of competitive battling to just 
+							the Pokedex for info on Pokemon. <br/>
+							Need to know something? Come on in and 
+							explore this site!
+						</div>
+						
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+						Sign-up for our newsletter:<br/>
+						<input id="name" type="text"/><br/>
+						<br>
+							<button data-controls-modal="modal-from-dom"
+							data-backdrop="true"
+							data-keyboard="true"
+							class="btn danger">Click Here</button>						
+					</td>
+					<td>
+						image
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="row">
+			<table align="center" class="sub">
+				<tr>
+					<td>
+						<a href="#">
+							<img class="thumbnail" src="versus.jpg" alt="Competitive Batting">
+							<font size="3">Competitive Battling</font>
+						</a>						
+					</td>
+					<td class="columnbreak">
+					</td>
+					<td>
+						<a href="#">
+							<br>
+							<br>
+							<img class="thumbnail" src="franchisecomplete.jpg" alt="Franchise">
+							<font size="3">Franchise</font>	
+						</a>
+					</td>
+					<td class="columnbreak">
+					</td>					
+					<td>
+						<a href="#">
+							<img class="thumbnail" src="pokedex.png" alt="Check the Pokedex">
+							<font size="3">Pokedex</font>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>				
 	
-	
-	
+		<div class="row end_background">
+			<div class="span5">
+				<font color="white">
+					Copyright 2012 Shuo Zhang All rights reserved
+				</font>
+			</div>	
+		</div>
 	
 	</div>
 </body>	
