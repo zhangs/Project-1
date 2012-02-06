@@ -1,0 +1,49 @@
+.bodybackground {
+	background-color: #E8E8E8;
+}
+
+.bar_background {
+	background-color: #FFFFFF;
+}
+
+.end_background {
+	background-color: #101010;	
+}
+
+.franchise_background {
+	background-color: #C0C0C0;
+}
+
+table.main {
+	background-color: #FFFFFF;
+	width:960px;
+	height:500px;
+}
+
+table.break {
+	background-color: #E8E8E8;
+	width:960px;
+	height:1px;
+}
+
+table.sub {
+	background-color: #FFFFFF;
+	width:960px;
+	height:350px;
+}
+
+td.columnbreak {
+	background-color: #E8E8E8;
+}
+
+.blueCol { 
+	background-color: blue; 
+}
+
+.intro_font {
+	font-size:30px;
+}
+
+.ex_font {
+	font-size:15px;
+}
